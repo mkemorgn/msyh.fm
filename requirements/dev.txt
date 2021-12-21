@@ -1,0 +1,2 @@
+# Local requirements for development
+-r prod.txt

@@ -1,0 +1,2 @@
+# Will have all production requrements for deployment
+Django==4.0
