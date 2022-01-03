@@ -1,2 +1,5 @@
 # Local requirements for development
 -r prod.txt
+
+black==21.12b0
+mypy==0.930
