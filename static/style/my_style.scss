@@ -12,9 +12,6 @@ $pink-invert: #fff;
 $family-serif: "Merriweather", "Georgia", serif;
 
 // 3. Set the derived variables
-// Use the new pink as the primary color
-$primary: $pink;
-$primary-invert: $pink-invert;
 
 // Use the existing orange as the danger color
 $danger: $orange;
@@ -41,6 +38,33 @@ $colors: map-merge($colors, $addColors);
 // 6. Import the rest of Bulma
 @import "bulma/css/bulma.css";
 
+//add custom stuff here
+.navbar-start {
+  flex-grow: 1;
+  justify-content: center;
+}
+
 .navbar {
-    background-color: $primary;
+  height: 300px;
+  background-color: black;
+}
+
+.navbar-item {
+  color: white;
+}
+
+.social {
+  padding-top: 10px;
+  padding-right: 10px;
+  font-size: 30px;
+  float: right;
+}
+
+#social-button {
+  padding: 7px;
+}
+
+.top-button {
+  padding-left: 50px;
+  float: right;
 }

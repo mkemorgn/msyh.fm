@@ -1,34 +1,24 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item">
+    <a class="navbar-item" href="https://bulma.io">
       <img src="/static/images/logos/MSYH.FM-Logo-Black-500x500px.png" width="60" height="100">
     </a>
-
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
     </a>
   </div>
-
-  <div id="navbarBasicExample" class="navbar-menu">
+  <div class="navbar-menu">
     <div class="navbar-start">
-      {% url 'index' as index_url%}
-      <a href="{{ index_url }}" class="navbar-item">
-        Home
-      </a>
-
-      {% url 'about' as about_url%}
-      <a href="{{ about_url }}" class="navbar-item">
-        About
-      </a>
-
-      {% url 'contact' as contact_url%}
-      <a href="{{ contact_url }}" class="navbar-item">
-        Contact
-      </a>
+      <a href=# class="navbar-item">Radio</a>
+      <a href=# class="navbar-item">Events</a>
+      <a href=# class="navbar-item">Blog</a>
+      <a href=# class="navbar-item">Store</a>
+      <a href=# class="navbar-item">About</a>
+      <a href=# class="navbar-item">Subscribe</a>
+      <a class="navbar-item">Stream</a>
     </div>
-
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
@@ -45,4 +35,3 @@
     </div>
   </div>
 </nav>
-</div>

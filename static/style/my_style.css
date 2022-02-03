@@ -1,6 +1,32 @@
 @import "bulma/css/bulma.css";
+.navbar-start {
+  flex-grow: 1;
+  justify-content: center;
+}
+
 .navbar {
-  background-color: #ffb3b3;
+  height: 300px;
+  background-color: black;
+}
+
+.navbar-item {
+  color: white;
+}
+
+.social {
+  padding-top: 10px;
+  padding-right: 10px;
+  font-size: 30px;
+  float: right;
+}
+
+#social-button {
+  padding: 7px;
+}
+
+.top-button {
+  padding-left: 50px;
+  float: right;
 }
 
 /*# sourceMappingURL=my_style.css.map */
