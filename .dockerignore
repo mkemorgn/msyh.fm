@@ -1,0 +1,14 @@
+#git
+.git
+.gitignore
+
+# Docker
+.docker
+
+#python
+.env/
+.venv/
+venv/
+
+# Local PostgreSQL data
+data/
