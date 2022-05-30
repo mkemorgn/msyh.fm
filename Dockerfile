@@ -1,33 +1,17 @@
-FROM python:3.10.1-slim as production
+# Pull base image
+FROM python:3.10.2-slim-bullseye
 
-ENV PYTHONUNBUFFERED=1
-WORKDIR /app/
+# Set environment variables
+ENV PIP_DISABLE_PIP_VERSION_CHECK 1
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
 
-RUN apt-get update && \
-    apt-get install -y \
-    bash \
-    build-essential \
-    gcc \
-    libffi-dev \
-    musl-dev \
-    openssl \
-    postgresql \
-    libpq-dev
+# Set work directory
+WORKDIR /code
 
+# Install dependencies
+COPY ./requirements.txt .
+RUN pip install -r requirements.txt
 
-COPY requirements/prod.txt ./requirements/prod.txt
-RUN pip install -r ./requirements/prod.txt
-
-COPY manage.py ./manage.py
-COPY msyhdotfm_website ./msyhdotfm_website
-
-
-EXPOSE 8000
-
-
-FROM production as development
-
-COPY requirements/dev.txt ./requirements/dev.txt
-RUN pip install -r ./requirements/dev.txt
-
+# Copy project
 COPY . .
