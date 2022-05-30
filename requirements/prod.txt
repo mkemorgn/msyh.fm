@@ -1,3 +1,0 @@
-# Will have all production requrements for deployment
-Django==4.0
-psycopg2==2.9.3

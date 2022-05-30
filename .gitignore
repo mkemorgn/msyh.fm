@@ -1,2 +1,4 @@
-db.sqlite3
-msyhdotfm-env
+.env/
+.gitignore
+.git
+.dockerignore
