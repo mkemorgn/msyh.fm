@@ -1,41 +1,21 @@
-version: "3.10.1"
-
-x-database-variables: &database-variables
-  POSTGRES_DB: postgres
-  POSTGRES_USER: postgres
-  POSTGRES_PASSWORD: postgres
-
-x-app-variables: &app-variables
-  <<: *database-variables
-  POSTGRES_HOST: postgres
-
+version: "3.9"
 
 services:
-    website:
-        image: msyhdotfm-website:latest
-        command: python manage.py runserver 0.0.0.0:8000
-        volumes:
-            - ./:/app/:rw,cached
-        environment: *app-variables
-        depends_on:
-            - db_migrate
-        ports:
-            - 8000:8000
-
-    db_migrate:
-      image: msyhdotfm-website:latest
-      command: python manage.py migrate
-      volumes:
-          - ./:/app/:rw,cached
-      environment: *app-variables
-
-    postgres:
-      image: postgres
-      ports:
-        - 5432:5432
-      environment: *database-variables
-      volumes:
-        - db-data:/var/lib/postgresql/data
+  web:
+    build: .
+    command: python /code/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+  db:
+    image: postgres:13
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - "POSTGRES_HOST_AUTH_METHOD=trust"
 
 volumes:
-  db-data:
+  postgres_data:
