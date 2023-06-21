@@ -12,6 +12,7 @@ const router = createRouter({
     {
       path: '/experience',
       name: 'experience',
+      // Lazy loaded when this route is visited.
       component: () => import('../views/ExperienceView.vue')
     }
   ]

@@ -14,15 +14,3 @@
   </div>
 </template>
 
-
-<style scoped>
-#logo-left:hover {
-    content: url("../assets/logos/hover_left.svg");
-    width: 16rem;
-}
-
-#logo-right:hover {
-    content: url("../assets/logos/hover_right.svg");
-    width: 16rem;
-}
-</style>
