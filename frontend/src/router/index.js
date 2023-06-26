@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import LandingPageView from '../views/LandingPageView.vue'
+import ExperienceView from '../views/ExperienceView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,8 +13,7 @@ const router = createRouter({
     {
       path: '/experience',
       name: 'experience',
-      // Lazy loaded when this route is visited.
-      component: () => import('../views/ExperienceView.vue')
+      component: ExperienceView
     }
   ]
 })
