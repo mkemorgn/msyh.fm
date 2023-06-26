@@ -8,7 +8,7 @@ import NavBar from '../components/NavBar.vue'
       <div class="flex justify-end px-20 py-5">
         <div class="font-bold px-10 py-3">MSYH.FM</div>
         <div class="border-1 border-black bg-orange-500 px-32 py-3 text-black font-bold w-1/2 h-12 rounded-full">
-          Player
+          &#9654 NOW PLAYING SIDE A SIDE B W/ NAEM|4:00-5:
         </div>
       </div>
 
