@@ -8,7 +8,7 @@
         <img class="w-60 h-60" src="../assets/logos/center_line.svg">
       </div>
       <div class="flex-auto">
-        <img id="logo-right" class="w-60" src="../assets/logos/msyhfm_logo.svg">
+        <img id="logo-right" class="w-60 hover:animate-bounce" src="../assets/logos/msyhfm_logo.svg">
       </div>
     </div>
   </div>
