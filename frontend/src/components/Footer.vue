@@ -16,7 +16,7 @@
             </li>
             <li>
                 <form action="#" class="border-2 rounded-full py-4 px-56 border-black bg-white">
-                    <label for="email">
+                    <label for="email" class="font-bold">
                         Sign up with your email address to receive updates, announcements and ticket giveaways FIRST!
                     </label>
                 </form>
