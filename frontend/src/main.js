@@ -16,6 +16,11 @@ import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faTwitch } from '@fortawesome/free-brands-svg-icons'
 import { faSoundcloud } from '@fortawesome/free-brands-svg-icons'
 import { faDiscord } from '@fortawesome/free-brands-svg-icons'
+import "@fontsource/barlow";
+import "@fontsource/barlow/800.css";
+import "@fontsource/barlow/600.css";
+import "@fontsource/barlow/800-italic.css";
+import "@fontsource/barlow/600-italic.css";
 
 const app = createApp(App)
       .use(router)

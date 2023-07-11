@@ -7,6 +7,9 @@ import LandingPage from './components/LandingPage.vue'
     <RouterView />
 </template>
 
-<style scoped>
+<style>
+ body {
+     font-family: "Barlow";
+ }
 
 </style>
