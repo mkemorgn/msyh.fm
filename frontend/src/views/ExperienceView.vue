@@ -5,10 +5,17 @@ import Footer from '../components/Footer.vue'
 
 <template>
   <main>
-    <div class="flex justify-end px-20 py-5">
-      <div class="font-bold px-10 py-3">MSYH.FM</div>
-      <div class="border-1 border-black bg-orange-500 px-32 py-3 text-black font-bold w-1/2 h-12 rounded-full">
-        &#9654 NOW PLAYING SIDE A SIDE B W/ NAEM|4:00-5:
+    <div class="grid grid-cols-2 w-full place-content-center">
+      <div class="justify-items-start">
+        <img class="w-60 pl-5" src="../assets/logos/make_sure_you_have_fun.svg">
+      </div>
+      <div class="flex justify-end px-20 py-5">
+        <ul class="flex flex-row">
+          <li class="font-bold p-3">MSYH.FM</li>
+          <li class="flex flex-nowrap justify-center border-1 border-black bg-orange-500 px-60 text-black font-bold h-12 rounded-full">
+            <p class="absolute">&#9654 NOW PLAYING SIDE A SIDE B W/ NAEM|4:00-5:00</p>
+          </li>
+        </ul>
       </div>
     </div>
 
@@ -108,6 +115,7 @@ import Footer from '../components/Footer.vue'
         </div>
       </div>
     </div>
+
     <Footer/>
   </main>
 </template>

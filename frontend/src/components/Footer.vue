@@ -11,8 +11,8 @@
                 <a href="#" class="text-white"><font-awesome-icon icon="fa-brands fa-discord" /></a>
             </li>
 
-            <li>
-                <p class="text-white font-bold pl-20 pr-10">STAY IN TOUCH</p>
+            <li class="p-5">
+                <img class="w-60 overflow-visible" src="../assets/logos/stay_in_touch.svg">
             </li>
             <li>
                 <form action="#" class="border-2 rounded-full py-4 px-56 border-black bg-white">
@@ -28,6 +28,4 @@
             </li>
         </ul>
     </div>
-
 </template>
-

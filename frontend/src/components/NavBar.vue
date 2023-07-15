@@ -7,8 +7,8 @@
 
             <li class="group italic cursor-pointer border-2 border-black bg-white-500 text-black font-bold py-2 px-20 rounded-full">
                 <a>EXPERIENCE</a>
-                <div class="group-hover:block italic absolute hidden h-auto">
-                    <ul class="flex-col w-auto border-2 border-black px-6 py-8  rounded-lg bg-white">
+                <div class="group-hover:block italic p-5 absolute content-start hidden h-auto">
+                    <ul class="border-2 border-black px-6 py-8 rounded-lg bg-white">
                         <li class="px-2 py-1 font-normal"><a>EVENTS</a></li>
                         <li class="px-2 py-1 font-normal"><a>CRASH THE DECKS</a></li>
                         <li class="px-2 py-1 font-normal"><a>FESTIVAL</a></li>
