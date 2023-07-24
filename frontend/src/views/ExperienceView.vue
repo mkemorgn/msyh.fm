@@ -115,7 +115,6 @@ import Footer from '../components/Footer.vue'
         </div>
       </div>
     </div>
-
     <Footer/>
   </main>
 </template>
