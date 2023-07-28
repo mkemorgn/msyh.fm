@@ -24,12 +24,12 @@ impl NewUser {
     /// Constructs new user details from name.
     #[cfg(test)] // only needed in tests
     pub fn new(
-        name: impl Into<String>,
+        user_name: impl Into<String>,
         email: impl Into<String>,
         password: impl Into<String>
     ) -> Self {
         Self {
-            name: name.into(),
+            user_name: user_name.into(),
             email: email.into(),
             password: password.into()
         }

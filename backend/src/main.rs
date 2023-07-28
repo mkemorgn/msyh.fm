@@ -152,21 +152,21 @@ mod tests {
         // create new user
         let req = test::TestRequest::post()
             .uri("/user")
-            .set_json(models::NewUser::new("Test user"))
+            .set_json(models::NewUser::new("Test user", "test@test.com", "test"))
             .to_request();
         let res: models::User = test::call_and_read_body_json(&app, req).await;
-        assert_eq!(res.name, "Test user");
+        assert_eq!(res.user_name, "Test user");
 
         // get a user
         let req = test::TestRequest::get()
-            .uri(&format!("/user/{}", res.id))
+            .uri(&format!("/user/{}", res.user_id))
             .to_request();
         let res: models::User = test::call_and_read_body_json(&app, req).await;
-        assert_eq!(res.name, "Test user");
+        assert_eq!(res.user_name, "Test user");
 
         // delete new user from table
         use crate::schema::users::dsl::*;
-        diesel::delete(users.filter(id.eq(res.id)))
+        diesel::delete(users.filter(user_id.eq(res.user_id)))
             .execute(&mut pool.get().expect("couldn't get db connection from pool"))
             .expect("couldn't delete test user from table");
     }
