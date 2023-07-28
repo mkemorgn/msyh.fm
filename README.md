@@ -1,13 +1,32 @@
-# Dependencies
+# Frontend
+- VueJs
+- TailwindCSS
+
+## Dependencies
 - node.js
 - npm
 - git
 
-# Commands
+## Commands
 - `git clone git@github.com:mkemorgn/msyh.fm.git`
 - `cd frontend`
 - `npm install`
 - `npm run dev` Website will be running on http://localhost:5173/
+
+# Backend
+- Rust(Actix-web)
+- PostgreSQL
+- Diesel
+
+## Dependencies
+- Rust tool chain (Nightly)
+- PostgreSQL
+
+## Commands
+- `cargo install diesel_cli --no-default-features --features postgres`
+- `echo DATABASE_URL=postgres://username:password@localhost/msyhfm_dev > .env`
+- `diesel setup`
+- `cargo run` Check main for routes. 
 
 # Notes
 In order to clone the repository you'll need to set up [SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?platform=mac&tool=webui)  
