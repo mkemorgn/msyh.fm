@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import LandingPageView from '../views/LandingPageView.vue'
 import ExperienceView from '../views/ExperienceView.vue'
+import EventsView from '../views/EventsView.vue'
 import TestView from '../views/TestView.vue'
 
 const router = createRouter({
@@ -15,6 +16,11 @@ const router = createRouter({
       path: '/experience',
       name: 'experience',
       component: ExperienceView
+    },
+    {
+      path: '/events',
+      name: 'events',
+      component: EventsView
     },
     {
       path: '/test',

@@ -9,7 +9,7 @@
                 <a>EXPERIENCE</a>
                 <div class="group-hover:block italic p-5 absolute content-start hidden h-auto">
                     <ul class="border-2 border-black px-6 py-8 rounded-lg bg-white">
-                        <li class="px-2 py-1 font-normal"><a>EVENTS</a></li>
+                        <li class="px-2 py-1 font-normal"><a href="/events">EVENTS</a></li>
                         <li class="px-2 py-1 font-normal"><a>CRASH THE DECKS</a></li>
                         <li class="px-2 py-1 font-normal"><a>FESTIVAL</a></li>
                     </ul>
