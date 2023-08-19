@@ -11,6 +11,9 @@ import Footer from '../components/Footer.vue'
       </div>
       <div class="flex justify-end px-20 py-5">
         <ul class="flex flex-row">
+          <li class="flex flex-nowrap justify-center border-2 italic border-black bg-white-500 text-black font-bold h-12 px-20 rounded-full">
+              <a class="absolute p-2">Log-In</a>
+          </li>
           <li class="font-bold p-3">MSYH.FM</li>
           <li class="flex flex-nowrap justify-center border-1 border-black bg-orange-500 px-60 text-black font-bold h-12 rounded-full">
             <p class="absolute">&#9654 NOW PLAYING SIDE A SIDE B W/ NAEM|4:00-5:00</p>
