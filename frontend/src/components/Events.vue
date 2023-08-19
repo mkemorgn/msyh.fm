@@ -7,19 +7,10 @@
             <h1 class="p-5">Title</h1>
             <h2 class="p-5">Subtitle</h2>
             <h3 class="p-5">Date</h3>
+            <a class="border-1 border-black bg-orange-500 text-black font-bold py-2 px-20 rounded-full">
+              Tickets
+            </a>
           </div>
-        </div>
-
-        <div class="container mx-auto">
-          <ul class="flex space-x-8 place-content-end">
-            <li class="border-1 border-black bg-orange-500 text-black font-bold py-2 px-20 rounded-full">
-              <a href="#">Tickets</a>
-            </li>
-
-            <li class="border-1 border-black bg-orange-500 text-black font-bold py-2 px-20 rounded-full">
-              <a href="#">Facebook</a>
-            </li>
-          </ul>
         </div>
       </div>
 
@@ -30,19 +21,10 @@
             <h1 class="p-5">Title</h1>
             <h2 class="p-5">Subtitle</h2>
             <h3 class="p-5">Date</h3>
+            <a class="border-1 border-black bg-orange-500 text-black font-bold py-2 px-20 rounded-full">
+              Tickets
+            </a>
           </div>
-        </div>
-
-        <div class="container mx-auto">
-          <ul class="flex space-x-8 place-content-end">
-            <li class="border-1 border-black bg-orange-500 text-black font-bold py-2 px-20 rounded-full">
-              <a>Tickets</a>
-            </li>
-
-            <li class="border-1 border-black bg-orange-500 text-black font-bold py-2 px-20 rounded-full">
-              <a>Facebook</a>
-            </li>
-          </ul>
         </div>
       </div>
 
@@ -53,19 +35,10 @@
             <h1 class="p-5">Title</h1>
             <h2 class="p-5">Subtitle</h2>
             <h3 class="p-5">Date</h3>
+            <a class="border-1 border-black bg-orange-500 text-black font-bold py-2 px-20 rounded-full">
+              Tickets
+            </a>
           </div>
-        </div>
-
-        <div class="container mx-auto">
-          <ul class="flex space-x-8 place-content-end">
-            <li class="border-1 border-black bg-orange-500 text-black font-bold py-2 px-20 rounded-full">
-              <a>Tickets</a>
-            </li>
-
-            <li class="border-1 border-black bg-orange-500 text-black font-bold py-2 px-20 rounded-full">
-              <a>Facebook</a>
-            </li>
-          </ul>
         </div>
       </div>
 
@@ -76,19 +49,10 @@
             <h1 class="p-5">Title</h1>
             <h2 class="p-5">Subtitle</h2>
             <h3 class="p-5">Date</h3>
+            <a class="border-1 border-black bg-orange-500 text-black font-bold py-2 px-20 rounded-full">
+              Tickets
+            </a>
           </div>
-        </div>
-
-        <div class="container mx-auto">
-          <ul class="flex space-x-8 place-content-end">
-            <li class="border-1 border-black bg-orange-500 text-black font-bold py-2 px-20 rounded-full">
-              <a>Tickets</a>
-            </li>
-
-            <li class="border-1 border-black bg-orange-500 text-black font-bold py-2 px-20 rounded-full">
-              <a>Facebook</a>
-            </li>
-          </ul>
         </div>
       </div>
     </div>
