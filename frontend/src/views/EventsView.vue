@@ -1,4 +1,5 @@
 <script setup>
+import Events from '../components/Events.vue'
 import NavBar from '../components/NavBar.vue'
 import Footer from '../components/Footer.vue'
 </script>
@@ -22,101 +23,8 @@ import Footer from '../components/Footer.vue'
     </div>
 
     <NavBar />
+    <Events />
 
-    <div class="container mx-auto pt-56 grid grid-cols-2 gap-20">
-
-      <div class="container mx-auto">
-        <div class="container flex space-x-5 mx-auto">
-          <p class="basis-1/2">Photo</p>
-          <div class="flex flex-col">
-            <h1 class="p-5">Title</h1>
-            <h2 class="p-5">Subtitle</h2>
-            <h3 class="p-5">Date</h3>
-          </div>
-        </div>
-
-        <div class="container mx-auto">
-          <ul class="flex space-x-8 place-content-end">
-            <li class="border-1 border-black bg-orange-500 text-black font-bold py-2 px-20 rounded-full">
-              <a href="#">Tickets</a>
-            </li>
-
-            <li class="border-1 border-black bg-orange-500 text-black font-bold py-2 px-20 rounded-full">
-              <a href="#">Facebook</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="container mx-auto">
-        <div class="container flex space-x-5 mx-auto">
-          <p class="basis-1/2">Photo</p>
-          <div class="flex flex-col">
-            <h1 class="p-5">Title</h1>
-            <h2 class="p-5">Subtitle</h2>
-            <h3 class="p-5">Date</h3>
-          </div>
-        </div>
-
-        <div class="container mx-auto">
-          <ul class="flex space-x-8 place-content-end">
-            <li class="border-1 border-black bg-orange-500 text-black font-bold py-2 px-20 rounded-full">
-              <a>Tickets</a>
-            </li>
-
-            <li class="border-1 border-black bg-orange-500 text-black font-bold py-2 px-20 rounded-full">
-              <a>Facebook</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="container mx-auto">
-        <div class="container flex space-x-5 mx-auto">
-          <p class="basis-1/2">Photo</p>
-          <div class="flex flex-col">
-            <h1 class="p-5">Title</h1>
-            <h2 class="p-5">Subtitle</h2>
-            <h3 class="p-5">Date</h3>
-          </div>
-        </div>
-
-        <div class="container mx-auto">
-          <ul class="flex space-x-8 place-content-end">
-            <li class="border-1 border-black bg-orange-500 text-black font-bold py-2 px-20 rounded-full">
-              <a>Tickets</a>
-            </li>
-
-            <li class="border-1 border-black bg-orange-500 text-black font-bold py-2 px-20 rounded-full">
-              <a>Facebook</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="container mx-auto">
-        <div class="container flex space-x-5 mx-auto">
-          <p class="basis-1/2">Photo</p>
-          <div class="flex flex-col">
-            <h1 class="p-5">Title</h1>
-            <h2 class="p-5">Subtitle</h2>
-            <h3 class="p-5">Date</h3>
-          </div>
-        </div>
-
-        <div class="container mx-auto">
-          <ul class="flex space-x-8 place-content-end">
-            <li class="border-1 border-black bg-orange-500 text-black font-bold py-2 px-20 rounded-full">
-              <a>Tickets</a>
-            </li>
-
-            <li class="border-1 border-black bg-orange-500 text-black font-bold py-2 px-20 rounded-full">
-              <a>Facebook</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
     <Footer/>
   </main>
 </template>

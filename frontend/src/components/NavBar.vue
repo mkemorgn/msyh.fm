@@ -2,7 +2,7 @@
     <div class="container mx-auto pt-20">
         <ul class="w-full flex space-x-20 place-content-center">
             <li class="border-2 italic border-black bg-white-500 text-black font-bold py-2 px-20 rounded-full">
-                <a>HOME</a>
+                <a href="/experience">HOME</a>
             </li>
 
             <li class="group italic cursor-pointer border-2 border-black bg-white-500 text-black font-bold py-2 px-20 rounded-full">
