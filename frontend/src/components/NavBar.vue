@@ -42,7 +42,7 @@
                     <ul class="top-o w-48 bg-white">
                         <li class="py-1 font-normal"><a href="/blog">BLOG</a></li>
                         <li class="py-1 font-normal"><a href="/about">ABOUT US</a></li>
-                        <li class="py-1 font-normal"><a>THE TEAM</a></li>
+                        <li class="py-1 font-normal"><a href="/team">THE TEAM</a></li>
                         <li class="py-1 font-normal"><a>OUR PARTNERS</a></li>
                         <li class="py-1 font-normal"><a>HOW TO APPLY</a></li>
                     </ul>

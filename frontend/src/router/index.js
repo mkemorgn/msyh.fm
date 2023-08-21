@@ -5,6 +5,7 @@ import EventsView from '../views/EventsView.vue'
 import TestView from '../views/TestView.vue'
 import BlogView from '../views/BlogView.vue'
 import AboutView from '../views/AboutView.vue'
+import TeamView from '../views/TeamView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,6 +24,11 @@ const router = createRouter({
       path: '/blog',
       name: 'blog',
       component: BlogView
+    },
+    {
+      path: '/team',
+      name: 'team',
+      component: TeamView
     },
     {
       path: '/about',
