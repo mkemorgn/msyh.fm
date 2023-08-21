@@ -1,5 +1,5 @@
 <script setup>
-import Events from '../components/Events.vue'
+import BlogItems from '../components/BlogItems.vue'
 import NavBar from '../components/NavBar.vue'
 import Footer from '../components/Footer.vue'
 </script>
@@ -7,7 +7,7 @@ import Footer from '../components/Footer.vue'
 <template>
   <main>
     <NavBar />
-    <Events />
+    <BlogItems />
     <Footer/>
   </main>
 </template>
