@@ -5,7 +5,7 @@
           <p class="basis-1/2">Photo</p>
           <div class="flex flex-col">
             <h1 class="p-5">Team Title</h1>
-            <a class="p-5">Read More</a>
+            <a href="/team/rb" class="p-5">Read More</a>
           </div>
         </div>
       </div>
@@ -15,7 +15,7 @@
           <p class="basis-1/2">Photo</p>
           <div class="flex flex-col">
             <h1 class="p-5">Team Title</h1>
-            <a class="p-5">Read More</a>
+            <a href="/team/sara" class="p-5">Read More</a>
           </div>
         </div>
       </div>
@@ -25,7 +25,7 @@
           <p class="basis-1/2">Photo</p>
           <div class="flex flex-col">
             <h1 class="p-5">Team Title</h1>
-            <a class="p-5">Read More</a>
+            <a href="/team/mike" class="p-5">Read More</a>
           </div>
         </div>
       </div>
