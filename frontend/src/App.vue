@@ -1,15 +1,13 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import LandingPage from './components/LandingPage.vue'
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
-    <RouterView />
+  <RouterView />
 </template>
 
 <style>
- body {
-     font-family: "Barlow";
- }
-
+body {
+  font-family: 'Barlow';
+}
 </style>

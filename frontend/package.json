@@ -17,6 +17,7 @@
     "@mojs/core": "^1.5.1",
     "axios": "^1.4.0",
     "requirejs": "^2.3.6",
+    "v3-dragger": "^2.7.5",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6",
     "vuetify": "^3.1.15"

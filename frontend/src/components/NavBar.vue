@@ -1,7 +1,7 @@
 <template>
     <div class="mx-auto">
         <div class="grid grid-cols-2 w-full place-content-center">
-        <div class="justify-items-start">
+        <div class="draggable-element" v-dragger>
             <img class="w-60 h-60 pl-5" src="../assets/logos/make_sure_you_have_fun.svg">
         </div>
         <div class="flex justify-end px-20 py-5">

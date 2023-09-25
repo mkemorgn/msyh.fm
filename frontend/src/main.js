@@ -21,13 +21,19 @@ import "@fontsource/barlow/800.css";
 import "@fontsource/barlow/600.css";
 import "@fontsource/barlow/800-italic.css";
 import "@fontsource/barlow/600-italic.css";
+import { vDraggerBeforeMount, vDraggerUnMount } from 'v3-dragger';
+
 
 const app = createApp(App)
       .use(router)
-      .component('font-awesome-icon',FontAwesomeIcon)
+      .component('font-awesome-icon', FontAwesomeIcon)
+      .directive('dragger', {
+            beforeMount: vDraggerBeforeMount,
+            unmounted: vDraggerUnMount,
+      })
       .mount('#app');
 
 
 library.add(
-     faInstagram, faTwitter, faFacebook, faYoutube, faTwitch, faSoundcloud, faDiscord
- )
+      faInstagram, faTwitter, faFacebook, faYoutube, faTwitch, faSoundcloud, faDiscord
+)
