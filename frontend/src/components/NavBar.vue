@@ -1,8 +1,8 @@
 <template>
     <div class="mx-auto">
         <div class="grid grid-cols-2 w-full place-content-center">
-        <div class="justify-items-start">
-            <img class="w-60 h-60 pl-5" src="../assets/logos/make_sure_you_have_fun.svg">
+        <div id="logo" class="justify-items-start">
+            <img id="logo1" class="w-60 h-60 pl-5" src="../assets/logos/make_sure_you_have_fun.svg">
         </div>
         <div class="flex justify-end px-20 py-5">
             <ul class="flex flex-row space-x-5">

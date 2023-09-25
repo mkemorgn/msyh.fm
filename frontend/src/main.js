@@ -22,8 +22,10 @@ import "@fontsource/barlow/600.css";
 import "@fontsource/barlow/800-italic.css";
 import "@fontsource/barlow/600-italic.css";
 
+import VueAnime from 'vue-animejs';
+
 const app = createApp(App)
-      .use(router)
+      .use(router, VueAnime)
       .component('font-awesome-icon',FontAwesomeIcon)
       .mount('#app');
 
