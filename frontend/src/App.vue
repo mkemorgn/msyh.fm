@@ -5,11 +5,17 @@ import LandingPage from './components/LandingPage.vue'
 import { Motion } from "motion/vue"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import { RouterView } from 'vue-router';
 >>>>>>> b126f2e (add nuxt frontend)
 =======
 >>>>>>> 9e28fa5 (cleaning up)
+=======
+=======
+import { RouterView } from 'vue-router';
+>>>>>>> b126f2e (add nuxt frontend)
+>>>>>>> 629b423 (fix merge conflict)
 </script>
 
 <template>

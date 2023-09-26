@@ -23,16 +23,22 @@ import "@fontsource/barlow/800-italic.css";
 import "@fontsource/barlow/600-italic.css";
 import { vDraggerBeforeMount, vDraggerUnMount } from 'v3-dragger';
 
+<<<<<<< HEAD
 
 import VueAnime from 'vue-animejs';
+=======
+>>>>>>> 629b423 (fix merge conflict)
 
 import VueAnime from 'vue-animejs';
 
 const app = createApp(App)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9e28fa5 (cleaning up)
+=======
+>>>>>>> 629b423 (fix merge conflict)
       .use(router, VueAnime)
       .component('font-awesome-icon',FontAwesomeIcon)
 =======
