@@ -13,6 +13,7 @@
             </path>
         </svg>
 
+<<<<<<< HEAD
 =======
     <div class="flex justify-center items-center h-screen w-full">
       <div class="group flex flex-col justify-center items-center">
@@ -27,6 +28,8 @@
           src="../assets/logos/make_sure_you_have_fun.svg"
         />
 >>>>>>> b126f2e (add nuxt frontend)
+=======
+>>>>>>> 9e28fa5 (cleaning up)
       </div>
       <div>
         <img
@@ -54,5 +57,8 @@ path {
   vector-effect: non-scaling-stroke;
 }
 </style>
+<<<<<<< HEAD
 =======
 >>>>>>> b126f2e (add nuxt frontend)
+=======
+>>>>>>> 9e28fa5 (cleaning up)

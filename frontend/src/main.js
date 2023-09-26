@@ -26,8 +26,13 @@ import { vDraggerBeforeMount, vDraggerUnMount } from 'v3-dragger';
 
 import VueAnime from 'vue-animejs';
 
+import VueAnime from 'vue-animejs';
+
 const app = createApp(App)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9e28fa5 (cleaning up)
       .use(router, VueAnime)
       .component('font-awesome-icon',FontAwesomeIcon)
 =======
