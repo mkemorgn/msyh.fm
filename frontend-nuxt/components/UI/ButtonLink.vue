@@ -7,11 +7,11 @@ defineProps({
 });
 </script>
 <template>
-  <ButtonButton>
+  <UIButtonButton>
     <NuxtLink :to="to">
       <slot />
     </NuxtLink>
-  </ButtonButton>
+  </UIButtonButton>
 </template>
 
 <style scoped>

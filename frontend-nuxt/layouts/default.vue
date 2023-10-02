@@ -1,11 +1,14 @@
 <template>
   <div
     id="main-content-wrapper"
-    className="grid min-h-full w-full "
+    className="grid min-h-full w-full"
   >
     <NavBar />
     <main class="h-full w-full">
-      <slot />
+      <ContainerWrap>
+        <slot />
+      </ContainerWrap>
+
       <TheFooter />
     </main>
   </div>

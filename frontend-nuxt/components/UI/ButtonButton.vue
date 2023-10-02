@@ -16,7 +16,8 @@ const handleClick = () => {
   // if no onClick prop
   // check for child component 'a' tag and call click() on it
   if (!props.onClick) {
-    const a = button?.value?.querySelector('a');
+    // @ts-ignore
+    const a = button?.value.querySelector('a');
     a && a.click();
   }
 };
