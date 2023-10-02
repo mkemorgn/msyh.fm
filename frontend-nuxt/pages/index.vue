@@ -31,7 +31,7 @@ definePageMeta({
           class="absolute bottom-1/4 z-0 translate-y-full transition-transform group-hover:translate-x-40 group-hover:translate-y-40"
           to="/shop"
         >
-          <div class="p-6 text-xl font-bold text-brand">SHOP</div>
+          <div class="p-6 text-xl font-bold text-brand">RADIO</div>
         </NuxtLink>
         <div class="z-10 aspect-square w-96 rounded-full bg-white p-12">
           <img
