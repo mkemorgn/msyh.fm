@@ -1,6 +1,5 @@
 <template>
   <div class="container mx-auto">
-<<<<<<< HEAD
     <div class="flex place-items-center h-screen">
       <div class="flex-auto">
         <a href="/experience"><img id="logo-left" class="w-60" src="../assets/logos/make_sure_you_have_fun.svg"></a>
@@ -12,12 +11,6 @@
                 ">
             </path>
         </svg>
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 629b423 (fix merge conflict)
-=======
     <div class="flex justify-center items-center h-screen w-full">
       <div class="group flex flex-col justify-center items-center">
         <a
@@ -30,12 +23,6 @@
           class="w-60"
           src="../assets/logos/make_sure_you_have_fun.svg"
         />
->>>>>>> b126f2e (add nuxt frontend)
-<<<<<<< HEAD
-=======
->>>>>>> 9e28fa5 (cleaning up)
-=======
->>>>>>> 629b423 (fix merge conflict)
       </div>
       <div>
         <img
@@ -63,13 +50,3 @@ path {
   vector-effect: non-scaling-stroke;
 }
 </style>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> b126f2e (add nuxt frontend)
-=======
->>>>>>> 9e28fa5 (cleaning up)
-=======
-=======
->>>>>>> b126f2e (add nuxt frontend)
->>>>>>> 629b423 (fix merge conflict)

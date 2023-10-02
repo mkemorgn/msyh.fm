@@ -31,7 +31,10 @@ import VueAnime from 'vue-animejs';
 
 import VueAnime from 'vue-animejs';
 
+import VueAnime from 'vue-animejs';
+
 const app = createApp(App)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -39,6 +42,8 @@ const app = createApp(App)
 >>>>>>> 9e28fa5 (cleaning up)
 =======
 >>>>>>> 629b423 (fix merge conflict)
+=======
+>>>>>>> master
       .use(router, VueAnime)
       .component('font-awesome-icon',FontAwesomeIcon)
 =======
