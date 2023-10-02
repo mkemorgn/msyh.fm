@@ -12,6 +12,26 @@ pub struct User {
     pub password: String,
 }
 
+// Event details.
+#[derive(Debug, Clone, Serialize, Deserialize, Queryable, Insertable)]
+#[diesel(table_name = events)]
+pub struct Event {
+    pub event_id: String,
+    pub event_name: String,
+    pub image: String,
+    pub date: String,
+    pub details: String,
+}
+
+/// New event details.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct NewEvent {
+    pub event_name: String,
+    pub image: String,
+    pub date: String,
+    pub details: String,
+}
+
 /// New user details.
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct NewUser {

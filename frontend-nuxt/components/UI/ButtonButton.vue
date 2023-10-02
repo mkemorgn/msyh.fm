@@ -28,7 +28,7 @@ const handleClick = () => {
     @click="handleClick"
     class="grid w-48 cursor-pointer place-items-center rounded-full border-2 px-4 py-1 font-bold italic"
     :class="{
-      'border-black bg-white text-brand hover:bg-brand hover:text-white':
+      'border-black bg-white text-black hover:bg-brand hover:text-white':
         variant === 'default',
       'border-white bg-brand text-white hover:bg-white hover:text-black':
         variant === 'inverse',
