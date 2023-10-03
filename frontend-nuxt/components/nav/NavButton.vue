@@ -33,7 +33,7 @@ watch(
 
 const buttonClass = computed(() => {
   return `${
-    isActive.value ? 'bg-brand text-white font-bold' : 'bg-white text-brand'
+    isActive.value ? 'bg-brand text-white font-bold' : 'bg-white text-black'
   } ${
     childLinks.length > 0
       ? 'group rounded-full hover:rounded-2xl'
