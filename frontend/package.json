@@ -1,35 +1,21 @@
 {
-  "name": "frontend",
-  "version": "0.0.0",
+  "name": "nuxt-app",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@fontsource/barlow": "^5.0.5",
-    "@fortawesome/fontawesome-svg-core": "^6.4.0",
-    "@fortawesome/free-brands-svg-icons": "^6.4.0",
-    "@fortawesome/free-regular-svg-icons": "^6.4.0",
-    "@fortawesome/free-solid-svg-icons": "^6.4.0",
-    "@fortawesome/vue-fontawesome": "^3.0.3",
-    "@mojs/core": "^1.5.1",
-    "animejs": "^3.2.1",
-    "axios": "^1.4.0",
-    "motion": "^10.16.2",
-    "requirejs": "^2.3.6",
-    "vue": "^3.2.47",
-    "vue-animejs": "^2.1.1",
-    "vue-router": "^4.1.6",
-    "vuedraggable": "^2.24.3",
-    "vuetify": "^3.1.15"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.0.0",
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.23",
-    "tailwindcss": "^3.3.1",
-    "vite": "^4.1.4"
+    "@nuxt/devtools": "latest",
+    "autoprefixer": "^10.4.16",
+    "nuxt": "^3.7.3",
+    "postcss": "^8.4.30",
+    "prettier": "^2.8.4",
+    "prettier-plugin-tailwindcss": "^0.2.4",
+    "tailwindcss": "^3.3.3"
   }
 }
