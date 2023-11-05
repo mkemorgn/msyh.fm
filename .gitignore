@@ -1,0 +1,28 @@
+
+# Nuxt dev/build outputs
+.output
+.nuxt
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+
+# Local env files
+.env.*
+!.env.example
+
+/backend/venv
+/backend/msyhfm/media/
+/backend/msyhfm/msyhfm/__pycache__/
+/backend/msyhfm/events/__pycache__/
+
+/backend/msyhfm/migrations/__pycache__/
+/backend/msyhfm/migrations/
+/backend/msyhfm/events/migrations/
+/backend/msyhfm/.env
