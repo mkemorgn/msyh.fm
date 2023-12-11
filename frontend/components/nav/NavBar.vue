@@ -21,6 +21,10 @@ const routes = [
   {
     name: 'Learn',
     path: '/learn',
+    children: [
+      { name: 'About Us', path: '/learn/about-us' },
+      { name: 'Team', path: '/learn/team' },
+    ],
   },
   {
     name: 'Support',

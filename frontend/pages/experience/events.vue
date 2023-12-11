@@ -1,7 +1,3 @@
-<script setup>
-const { data:events } = await useFetch('http://127.0.0.1:8000/events/')
-</script>
-
 <template>
     <div class="grid grid-cols-2 gap-5">
         <div class="grid grid-rows-4 grid-flow-col gap-5" v-for="e in events">
@@ -30,3 +26,7 @@ const { data:events } = await useFetch('http://127.0.0.1:8000/events/')
         </div>
     </div>
 </template>
+
+<script setup>
+const { data:events } =  useFetch('http://127.0.0.1:8000/events/')
+</script>

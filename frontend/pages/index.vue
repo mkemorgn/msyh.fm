@@ -10,7 +10,7 @@ definePageMeta({
       <div class="group relative flex h-full items-center justify-center">
         <NuxtLink
           class="absolute top-1/4 z-0 translate-y-full transition-transform group-hover:-translate-x-40 group-hover:-translate-y-40"
-          to="/experience"
+          to="/experience/events"
         >
           <div class="p-6 text-xl font-bold text-brand">EXPERIENCE</div>
         </NuxtLink>
