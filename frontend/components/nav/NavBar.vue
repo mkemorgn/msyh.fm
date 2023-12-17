@@ -7,11 +7,12 @@ const routes = [
   {
     name: 'Experience',
     path: '/experience',
-    // events, crash the decks, festival
+    // festival and tours won't be apart of v1
     children: [
       { name: 'Events', path: '/experience/events' },
       { name: 'Crash the Decks', path: '/experience/crash-the-decks' },
-      { name: 'Festival', path: '/experience/festival' },
+      //{ name: 'Festival', path: '/experience/festival' },
+      //{ name: 'Tours', path: '/experience/tours' },
     ],
   },
   {
@@ -22,13 +23,22 @@ const routes = [
     name: 'Learn',
     path: '/learn',
     children: [
+      { name: 'Blog', path: '/learn/blog' },
       { name: 'About Us', path: '/learn/about-us' },
-      { name: 'Team', path: '/learn/team' },
+      { name: 'The Team', path: '/learn/team' },
+      { name: 'Our Partners', path: '/learn/partners' },
+      { name: 'Apply', path: '/learn/apply' },
     ],
   },
   {
     name: 'Support',
     path: '/support',
+    children: [
+      // mission won't be apart of v1
+      { name: 'Donate', path: '/support/donate' },
+      { name: 'Subscribe', path: '/support/subscribe' },
+      //{ name: 'Mission', path: '/support/mission' },
+    ]
   },
 ];
 </script>

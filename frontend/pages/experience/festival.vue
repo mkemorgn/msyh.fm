@@ -1,1 +1,1 @@
-<template>Festival-remove</template>
+<template>Festival</template>
