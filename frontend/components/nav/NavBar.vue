@@ -41,6 +41,13 @@ const routes = [
     ]
   },
 ];
+// Function to return external link for 'Crash the Decks'
+const externalLink = (route: any): string | undefined => {
+  if (route.name === 'Crash the Decks') {
+    return 'https://www.crashthedecks.com';
+  }
+  return undefined;
+};
 </script>
 <template>
   <ContainerWrap>
