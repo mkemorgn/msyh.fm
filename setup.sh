@@ -13,3 +13,5 @@ alacritty --title "frontend" --command zsh -c 'cd frontend && npm run dev' &
 sleep 1
 
 i3-msg '[title="frontend"]' move container to workspace 9
+
+firefox http://localhost:3000 &
