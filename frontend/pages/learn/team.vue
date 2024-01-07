@@ -1,15 +1,16 @@
 <template>
   <div class="flex justify-around flex-wrap pt-32">
-    <!-- TODO: Connect to db -->
     <!-- Team Member Component -->
-    <div class="w-64 mb-4">
+    <div v-for="member in paginatedTeam" :key="member.id" class="w-64 mb-4">
+      <!-- Team member photo -->
       <div class="bg-orange-500 p-1">
-        <div class="bg-gray-300 h-64"></div> <!-- Placeholder for the image -->
+        <img :src="member.photo"/>
       </div>
 
+      <!-- Team member details -->
       <div class="text-center mt-2">
-        <div class="font-bold">Ryan "RB" Brown</div>
-        <div class="text-gray-700">Founder/Talent Buyer</div>
+        <div class="font-bold">{{ member.name }}</div>
+        <div class="text-gray-700">{{ member.title }}</div>
       </div>
 
       <!-- social links -->
@@ -19,24 +20,49 @@
         <font-awesome-icon icon="fas fa-link" />
       </div>
     </div>
-
-    <div class="w-64 mb-4">
-      <div class="bg-orange-500 p-1">
-        <div class="bg-gray-300 h-64"></div> <!-- Placeholder for the image -->
-      </div>
-      <div class="text-center mt-2">
-        <div class="font-bold">Mike Morgan</div>
-        <div class="text-gray-700">Web Developer</div>
-      </div>
-    </div>
-    <div class="w-64 mb-4">
-      <div class="bg-orange-500 p-1">
-        <div class="bg-gray-300 h-64"></div> <!-- Placeholder for the image -->
-      </div>
-      <div class="text-center mt-2">
-        <div class="font-bold">Sara Coffey</div>
-        <div class="text-gray-700">UX & Usability Analyst</div>
-      </div>
-    </div>
   </div>
 </template>
+
+<script setup>
+import { ref, computed, onMounted } from 'vue';
+import axios from 'axios';
+
+const localTeam = ref([]);
+const currentPage = ref(0);
+const teamMembersPerPage = 4;
+const teamApiUrl = 'http://127.0.0.1:8000/teams/';
+
+// Fetching data once on component mount
+onMounted(async () => {
+    try {
+        const response = await axios.get(teamApiUrl);
+        localTeam.value = response.data;
+    } catch (error) {
+        console.error("Error fetching team members:", error);
+    }
+});
+
+// Computed property for paginated events
+const paginatedTeam = computed(() => {
+    const start = currentPage.value * teamMembersPerPage;
+    return localTeam.value.slice(start, start + teamMembersPerPage);
+});
+
+// Computed property for page count
+const pageCount = computed(() => {
+    return Math.ceil(localEvents.value.length / teamMembersPerPage);
+});
+
+// Methods for pagination
+function nextPage() {
+    if (currentPage.value < pageCount.value - 1) {
+        currentPage.value++;
+    }
+}
+
+function prevPage() {
+    if (currentPage.value > 0) {
+        currentPage.value--;
+    }
+}
+</script>
