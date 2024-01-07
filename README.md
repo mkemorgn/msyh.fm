@@ -18,9 +18,9 @@
 - `python3 manage.py runserver`
 
 # Notes
-- In order to clone the repository you'll need to set up [SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?platform=mac&tool=webui)  
 
 - After initial setup you can run the `setup.sh` edit as necessary for your
 browser and terminal.
+
 
 
