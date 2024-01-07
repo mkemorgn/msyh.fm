@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "corsheaders",
     "events.apps.EventsConfig",
+    "team.apps.TeamConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
