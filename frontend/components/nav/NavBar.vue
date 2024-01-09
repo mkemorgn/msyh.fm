@@ -26,8 +26,8 @@ const routes = [
       { name: 'Blog', path: '/learn/blog' },
       { name: 'About Us', path: '/learn/about-us' },
       { name: 'The Team', path: '/learn/team' },
-      { name: 'Our Partners', path: '/learn/partners' },
-      { name: 'Apply', path: '/learn/apply' },
+      // { name: 'Our Partners', path: '/learn/partners' },
+      // { name: 'Apply', path: '/learn/apply' },
     ],
   },
   {
@@ -41,14 +41,8 @@ const routes = [
     ]
   },
 ];
-// Function to return external link for 'Crash the Decks'
-const externalLink = (route: any): string | undefined => {
-  if (route.name === 'Crash the Decks') {
-    return 'https://www.crashthedecks.com';
-  }
-  return undefined;
-};
 </script>
+
 <template>
   <ContainerWrap>
     <nav class="z-50 grid grid-cols-12">
