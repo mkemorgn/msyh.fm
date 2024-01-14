@@ -11,58 +11,92 @@
       <div class="text-center mt-2">
         <div class="font-bold">{{ member.name }}</div>
         <div class="text-gray-700">{{ member.title }}</div>
-      </div>
-
-      <!-- social links -->
-      <div class="space-x-5 text-center">
-        <font-awesome-icon icon="fa-brands fa-instagram-square" />
-        <font-awesome-icon icon="fa-brands fa-twitter-square" />
-        <font-awesome-icon icon="fas fa-link" />
+        <!-- Social Media Links Display -->
+        <div class="mt-2 text-center">
+          <a v-for="link in member.social_media_links" :key="link" :href="link" target="_blank">
+            <font-awesome-icon :icon="getIconName(link)" class="mx-1" />
+          </a>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
-<script setup>
-import { ref, computed, onMounted } from 'vue';
+<script lang="ts">
+import { ref, computed, onMounted } from '@vue/composition-api';
 import axios from 'axios';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
-const localTeam = ref([]);
-const currentPage = ref(0);
-const teamMembersPerPage = 4;
-const teamApiUrl = 'http://127.0.0.1:8000/teams/';
+interface TeamMember {
+  name: string;
+  title: string;
+  photo: string;
+  social_media_links: string[];
+}
 
-// Fetching data once on component mount
-onMounted(async () => {
-    try {
+export default {
+  setup() {
+    const teamApiUrl = 'http://localhost:8000/teams/'; 
+    const localTeam = ref<TeamMember[]>([]);
+    const currentPage = ref(0);
+    const teamMembersPerPage = 10; // Adjust as needed
+
+    // Fetch Team Data
+    onMounted(async () => {
+      try {
         const response = await axios.get(teamApiUrl);
         localTeam.value = response.data;
-    } catch (error) {
+      } catch (error) {
         console.error("Error fetching team members:", error);
-    }
-});
+      }
+    });
 
-// Computed property for paginated events
-const paginatedTeam = computed(() => {
-    const start = currentPage.value * teamMembersPerPage;
-    return localTeam.value.slice(start, start + teamMembersPerPage);
-});
+    // Computed property for paginated team
+    const paginatedTeam = computed(() => {
+      const start = currentPage.value * teamMembersPerPage;
+      return localTeam.value.slice(start, start + teamMembersPerPage);
+    });
 
-// Computed property for page count
-const pageCount = computed(() => {
-    return Math.ceil(localEvents.value.length / teamMembersPerPage);
-});
+    // Computed property for page count
+    const pageCount = computed(() => {
+      return Math.ceil(localTeam.value.length / teamMembersPerPage);
+    });
 
-// Methods for pagination
-function nextPage() {
-    if (currentPage.value < pageCount.value - 1) {
+    // Pagination methods
+    const nextPage = () => {
+      if (currentPage.value < pageCount.value - 1) {
         currentPage.value++;
-    }
-}
+      }
+    };
 
-function prevPage() {
-    if (currentPage.value > 0) {
+    const prevPage = () => {
+      if (currentPage.value > 0) {
         currentPage.value--;
-    }
-}
+      }
+    };
+
+    // Method to get Font Awesome icon name based on link
+    const getIconName = (link: string): IconDefinition => {
+      if (link.includes('instagram')) {
+        return ['fab', 'instagram'];
+      }
+      if (link.includes('facebook')) {
+        return ['fab', 'facebook-f'];
+      }
+      if (link.includes('github')) {
+        return ['fab', 'github'];
+      }
+      return ['fab', 'link']; // Default icon
+    };
+
+    return {
+      paginatedTeam,
+      currentPage,
+      pageCount,
+      nextPage,
+      prevPage,
+      getIconName,
+    };
+  },
+};
 </script>
