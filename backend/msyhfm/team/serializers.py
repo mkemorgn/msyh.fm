@@ -6,4 +6,4 @@ from .models import Team
 class TeamSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Team
-        fields = ("name", "title", "photo")
+        fields = ("name", "title", "photo", "social_media_links")
