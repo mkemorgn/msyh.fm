@@ -35,7 +35,7 @@ const routes = [
     path: '/support',
     children: [
       // mission won't be apart of v1
-      { name: 'Donate', path: '/support/donate' },
+      //{ name: 'Donate', path: '/support/donate' },
       { name: 'Subscribe', path: '/support/subscribe' },
       //{ name: 'Mission', path: '/support/mission' },
     ]
