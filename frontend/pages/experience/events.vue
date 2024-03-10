@@ -1,10 +1,12 @@
 <template>
     <div class="relative container mx-auto">
         <!-- Left arrow for previous page -->
-        <button @click="prevPage" :disabled="currentPage <= 0" class="arrow-button left-0">←</button>
+        <button @click="prevPage" :disabled="currentPage <= 0" class="arrow-button left-0">
+          <img src="~/assets/logos/left_arrow.svg">
+        </button>
 
         <!-- Main container for the events grid -->
-        <div class="grid grid-cols-2 grid-rows-2 gap-5">
+        <div class="event-container grid grid-cols-2 grid-rows-2 gap-5">
             <!-- Individual event container -->
             <div v-for="e in paginatedEvents" :key="e.id" class="min-w-[50%] grid grid-rows-4 grid-flow-col gap-5">
                 <!-- Event Image -->
@@ -28,7 +30,9 @@
         </div>
 
         <!-- Right arrow for next page -->
-        <button @click="nextPage" :disabled="currentPage >= pageCount - 1" class="arrow-button right-0">→</button>
+        <button @click="nextPage" :disabled="currentPage >= pageCount - 1" class="arrow-button right-0">
+          <img src="~/assets/logos/right_arrow.svg">
+        </button>
     </div>
 </template>
 
@@ -81,7 +85,9 @@ function prevPage() {
 .arrow-button {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-80%);
+    width: 100px;
+    height: 100px;
     /* Other styling as needed */
 }
 </style>
