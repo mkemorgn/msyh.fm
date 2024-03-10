@@ -60,7 +60,7 @@ const routes = [
       <div class="col-span-10 py-6">
         <div class="flex flex-col">
           <div class="flex w-full justify-end gap-4">
-            <UIButtonLink :to="'/login'">Log-In</UIButtonLink>
+            <!-- <UIButtonLink :to="'/login'">Log-In</UIButtonLink> -->
             <div
               class="flex items-center justify-center rounded-full bg-brand px-4 py-2 font-bold text-black"
             >
